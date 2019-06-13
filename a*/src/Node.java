@@ -7,25 +7,25 @@ public class Node {
         this(name, 0);
     }
 
-    public Node(String name, int heuristic) {
+    public Node(String name, double heuristic) {
         this.name = name;
         this.heuristic = heuristic;
         this.adjacencies = new ArrayList<>();
     }
 
     private String name;
-    private int heuristic;
+    private double heuristic;
     private List<Adjacency> adjacencies;
 
     public List<Adjacency> getAdjacencies() {
         return adjacencies;
     }
 
-    public int getHeuristic() {
+    public double getHeuristic() {
         return heuristic;
     }
 
-    void addAdjacency(Node target, int cost) {
+    void addAdjacency(Node target, double cost) {
         Adjacency adjacency = new Adjacency(this, target, cost);
         adjacencies.add(adjacency);
     }

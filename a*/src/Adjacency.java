@@ -1,9 +1,9 @@
 public class Adjacency {
     private Node source;
     private Node target;
-    private Integer cost;
+    private double cost;
 
-    public Adjacency(Node source, Node target, Integer cost) {
+    public Adjacency(Node source, Node target, double cost) {
         this.source = source;
         this.target = target;
         this.cost = cost;
@@ -17,7 +17,12 @@ public class Adjacency {
         return target;
     }
 
-    public Integer getCost() {
+    public double getCost() {
         return cost;
+    }
+
+    @Override
+    public String toString() {
+        return "{" + this.getSource() + "-" + this.getTarget() + ":" + this.getCost() + "}";
     }
 }
