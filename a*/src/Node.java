@@ -1,5 +1,3 @@
-import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -16,11 +14,15 @@ public class Node {
     }
 
     private String name;
-    private Integer heuristic;
+    private int heuristic;
     private List<Adjacency> adjacencies;
 
     public List<Adjacency> getAdjacencies() {
         return adjacencies;
+    }
+
+    public int getHeuristic() {
+        return heuristic;
     }
 
     void addAdjacency(Node target, int cost) {
