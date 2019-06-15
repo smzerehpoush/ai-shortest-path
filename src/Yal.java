@@ -1,9 +1,9 @@
-public class Adjacency {
+public class Yal {
     private Node source;
     private Node target;
     private double cost;
 
-    public Adjacency(Node source, Node target, double cost) {
+    public Yal(Node source, Node target, double cost) {
         this.source = source;
         this.target = target;
         this.cost = cost;

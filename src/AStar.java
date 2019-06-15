@@ -20,10 +20,10 @@ public class AStar {
         }
         double minValue = Double.POSITIVE_INFINITY;
         Node bestNode = null;
-        for (Adjacency adjacency : source.getAdjacencies()) {
-            if (!path.contains(adjacency.getTarget()) && adjacency.getCost() + adjacency.getTarget().getHeuristic() <= minValue) {
-                minValue = adjacency.getCost() + adjacency.getTarget().getHeuristic();
-                bestNode = adjacency.getTarget();
+        for (Yal yal : source.getAdjacencies()) {
+            if (!path.contains(yal.getTarget()) && yal.getCost() + yal.getTarget().getHeuristic() <= minValue) {
+                minValue = yal.getCost() + yal.getTarget().getHeuristic();
+                bestNode = yal.getTarget();
             }
         }
         path.add(bestNode);

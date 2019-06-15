@@ -15,9 +15,9 @@ public class Node {
 
     private String name;
     private double heuristic;
-    private List<Adjacency> adjacencies;
+    private List<Yal> adjacencies;
 
-    public List<Adjacency> getAdjacencies() {
+    public List<Yal> getAdjacencies() {
         return adjacencies;
     }
 
@@ -26,8 +26,8 @@ public class Node {
     }
 
     void addAdjacency(Node target, double cost) {
-        Adjacency adjacency = new Adjacency(this, target, cost);
-        adjacencies.add(adjacency);
+        Yal yal = new Yal(this, target, cost);
+        adjacencies.add(yal);
     }
 
     @Override
